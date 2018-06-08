@@ -103,20 +103,11 @@ client.on('guildMemberAdd', member => {
   // do nothing if the channel wasn't found on this server
   if (!general) return;
 
-  // find the 'Trial' role to be given to the new member
-  const trial = member.guild.roles.find('name', 'Trial');
-  // do nothing if the role wasn't found on this server
-  if (!trial) return;
-
   // find channels to be mentioned in the greeting
   const radcoins = member.guild.channels.find('name', channelNames.radcoins);
   const rules = member.guild.channels.find('name', channelNames.rules);
 
-  member.addRole(trial).then((member) => {
-    // Send the greeting message message, mentioning the member
-    general.send(
-        `Welcome ${member}! Be sure to read through ${rules} and check out ${radcoins}`);
-  });
+  general.send(`Welcome ${member}! Be sure to read through ${rules} and check out ${radcoins}`);
 });
 
 client.login(token); // client API login
