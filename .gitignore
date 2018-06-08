@@ -1,0 +1,17 @@
+#JetBrains IDE
+.idea/*
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+
+#config.json to prevent accidental bot token leak
+#config.json
+
+#logs
+logs/*.log

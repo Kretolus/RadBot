@@ -1,2 +1,2 @@
 # RadBot
-A greeter bot for RickRad
+A greeter bot for RichRad
