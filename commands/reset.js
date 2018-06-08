@@ -1,5 +1,5 @@
 /**
- * Created by kretolus on 05.03.18.
+ * Created by kretolus on 08.06.18.
  */
 module.exports = {
     name: 'reset',
