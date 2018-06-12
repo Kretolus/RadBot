@@ -107,7 +107,7 @@ client.on('guildMemberAdd', member => {
   const radcoins = member.guild.channels.find('name', channelNames.radcoins);
   const rules = member.guild.channels.find('name', channelNames.rules);
 
-  general.send(`Welcome ${member}! Be sure to read through ${rules} and check out ${radcoins}`);
+  general.send(`Welcome ${member}! Be sure to read through ${rules} and check out ${radcoins}, and please let us know your Twitch name!`);
 });
 
 client.login(token); // client API login
