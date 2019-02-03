@@ -43,6 +43,10 @@ client.on('ready', () => {
 // message handler
 client.on('message', message => {
   // check for prefix and whether the message was posted by a bot
+  if (message.channel.name.toLowerCase() === 'support') {
+    message.delete(100);
+    return;
+  }
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   // get command arguments and name
